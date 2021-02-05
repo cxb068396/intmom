@@ -1,0 +1,324 @@
+/* pages/home/home.wxss */
+.wrap{
+  width: 100vw;
+  height: 100%;
+  background-color: #f6f6f6;
+}
+.index_top{
+  width: 100%;
+  height: 240rpx;
+  position: relative;
+}
+.index_top_bg{
+  width: 100%;
+  height: 240rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.index_top_text{
+  width: 55%;
+  height: 36rpx;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 15px;
+  position: absolute;
+  top: 110rpx;
+  left: 25rpx;
+}
+.index_top_box{
+  width: 45%;
+  height: 64rpx;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 34px;
+  position: absolute;
+  bottom: 85rpx;
+  left: 24rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.top_box_inp{
+  font-size: 24rpx;
+  line-height: 36rpx;
+  width: 72%;
+  margin-left: 30rpx;
+  margin-top: 12rpx;
+}
+.top_box_box{
+  width: 56rpx;
+  height: 56rpx;  
+  background: #FFA676;
+  border-radius: 50%;
+  margin-top: 6rpx;
+  margin-right: 4rpx;
+}
+.top_box_box>image{
+  width: 28rpx;
+  height: 28rpx;
+  margin: 14rpx 14rpx;
+}
+.index_top_person{
+  width: 384rpx;
+  height: 256rpx;
+  position: absolute;
+  bottom: -40rpx;
+  right: 0;
+}
+/* 轮播 */
+.index_swiper{
+  width: 100%;
+  height: 332rpx;
+  background-color: #FFB38D;
+}
+.swiper_container{
+  width: 100%;
+  height: 330rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background-color: #f6f6f6;
+  border: 1rpx solid #f6f6f6;
+}
+.container{
+  width: 94%;
+  height: 260rpx;
+  margin: 48rpx auto;
+  margin-bottom: unset;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.home-swiper {
+  width: 100%;
+  height: 260rpx; 
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+/* 专题，体育 */
+.index_center{
+  width: 94%;
+   padding:18rpx 0;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 16rpx;
+  margin-top: 12rpx;
+}
+.center_container{
+  height: 125rpx;
+  width: 105rpx;
+  margin-top: 15rpx;
+}
+.center_container_img{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 10rpx;
+}
+.center_container_text{
+  height: 38rpx;
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #2F2F2F;
+  line-height: 38rpx;
+  text-align: center;
+}
+/* 活动预约 */
+.index_activity{
+  width: 94%;
+  height: 48rpx;
+  margin: 40rpx auto;
+  margin-bottom: unset;
+  display: flex;
+  justify-content: space-between;
+}
+.activity_text{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #000000;
+  line-height: 48rpx;
+}
+.activity_right{
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+  font-weight: 540;
+  color: #4D4D4D;
+  line-height: 36rpx;
+  margin-top: 10rpx;
+}
+.activity_right>image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.index_activity_container{
+  width: 94%;
+  height: 228rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  margin: 24rpx auto;
+  margin-bottom: unset;
+}
+.activity_container{
+  width: 94%;
+  height: 180rpx;
+  margin: auto;
+  position: relative;
+  top: 24rpx;
+  border-radius: 16rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.activity_container>image{
+  width: 262rpx;
+  height: 180rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+.activity_container_container{
+  width: 364rpx;
+  height: inherit;
+}
+.container_textOne{
+  width: inherit;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #4D4D4D;
+  line-height: 40rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.container_textTwo{
+  width: inherit;
+  height: 72rpx;
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+  font-weight: 400;
+  color: #747474;
+  line-height: 36rpx;
+  margin-top: 5rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.container_bottom{
+  width: inherit;
+  height: 48rpx;
+  margin-top: 12rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.container_bottom_left{
+  margin-top: 9rpx;
+}
+.container_bottom_left>image{
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 10rpx;
+  position: relative;
+  top: 7rpx;
+}
+.container_bottom_left>text{
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+  font-weight: 400;
+  color: #747474;
+  line-height: 30rpx;
+  margin-left: 5rpx;
+}
+.container_bottom_right{
+  width: 136rpx;
+  height: 48rpx;
+  background-color: #FF752A;
+  border-radius: 24rpx;
+  text-align: center;
+  line-height: 48rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.order{
+  background-color: #bbbbbb;
+
+}
+.index_footer{
+  width: 100%;
+  font-size: 25rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  color: #2F2F2F;
+}
+
+.iswrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.shade{
+  width: 100%;
+  height: 100%;
+  top:0;   
+  background:rgba(0,0,0,0.5);   
+  overflow: hidden;   
+  /*要显示在wrap的上面 */   
+  z-index: 999;   
+ position: fixed;
+}
+.contes{
+  position: relative;
+  margin-left: 12vw;
+  margin-top: 20vh;
+}
+.contes .title{
+  font-size: 28rpx;
+  color: #E9462D;
+  font-weight: 600;
+  position: absolute;
+  top: 270rpx;
+  right: 170rpx;
+}
+.contes .price{
+  font-size: 26rpx;
+  color: #E9462D;
+  font-weight: 500;
+  position: absolute;
+  top: 270rpx;
+  left: 70rpx;
+}
+.contes .price text{
+  font-size: 56rpx;
+  font-weight: 600;
+}
+.contes  .date{
+  font-size: 20rpx;
+  color: #3f3f3f;
+  margin-bottom: 8rpx;
+  position: absolute;
+  top: 350rpx;
+  left: 70rpx;
+}
+.contes .close{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  bottom: -100rpx;
+  left: 252rpx;
+}
+.shadeImage{
+  width: 580rpx;
+  height: 528rpx;
+}
+.getCoupon{
+  width: 580rpx;
+  height: 130rpx;
+  position: absolute;
+  left: 0;
+  bottom:0;
+}

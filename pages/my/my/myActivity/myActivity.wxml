@@ -1,0 +1,95 @@
+
+<!--pages/my/coupon/coupon.wxml-->
+<!--index.wxml-->
+<view class="swiper-tab">
+	<view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">已预约</view>
+	<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已参与</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight?winHeight+'px':'auto'}}" bindchange="bindChange">
+	<!-- 我是哈哈 -->
+	<swiper-item>
+		<scroll-view scroll-y="{{true}}" style="height: {{winHeight?winHeight+'px':'auto'}}">
+
+			<!---未使用优惠券-->
+			<view wx:for='{{arrList}}' wx:key='index'>
+        <view class='attend'>
+					<view class="attend_left">
+            <image src='{{item.image}}'></image>
+            <view class='tag'>已预约</view>
+          </view>
+          <view class="attend_right">
+            <view class='title'>{{item.activity_name}}</view>
+            <view class='desc'>{{item.activity_profile}}</view>
+            <view class='notice'>
+              <view class='ad'>
+                <image src='../../../static/my/AD.png'></image>
+              </view>
+              <view class='marquee'>
+                <marquee text='本期活动还未开始，期待您的参与'></marquee>
+              </view>
+            </view>
+            <view class='date'>活动时间： <text>{{item.activity_start}}</text> </view>
+            <view class='handle'>
+              <view class='handle_left'>
+                <image src="../../../static/my/clock.png"></image>
+                <view class='num'>{{item.num}}人已预约</view>
+              </view>
+              <!-- <view class='handle_right' bindtap="handShow">
+                <image src="../../../static/my/more.png"></image>
+              </view> -->
+            </view>
+            <!-- <view class='btngroup' wx:if="{{isShow}}">
+                  <view class='btn'  data-id='{{item.id}}' bindtap="deleteAct">删除</view>
+                </view> -->
+					</view>
+        </view>
+  
+			</view>
+			
+		</scroll-view>
+	</swiper-item>
+	<!-- 我是呵呵 -->
+	<swiper-item>
+		<scroll-view scroll-y="{{true}}" style="height: {{winHeight?winHeight+'px':'auto'}}">
+			<!--已经使用的优惠券--->
+			<view wx:for='{{arrList1}}' wx:key='index'>
+        <view class='attend'>
+					<view class="attend_left">
+            <image src='{{item.image}}'></image>
+            <view class='tag'>已结束</view>
+          </view>
+          <view class="attend_right">
+            <view class='title'>{{item.activity_name}}</view>
+            <view class='desc'>{{item.activity_profile}}</view>
+            <view class='notice'>
+              <view class='ad'>
+                <image src='../../../static/my/AD.png'></image>
+              </view>
+              <view class='marquee'>
+                <marquee text='本期活动还未开始，期待您的参与'></marquee>
+              </view>
+            </view>
+            <view class='date'>活动时间： <text>{{item.activity_start}}</text> </view>
+            <view class='handle'>
+              <view class='handle_left'>
+                <image src="../../../static/my/clock.png"></image>
+                <view class='num'>{{item.num}}人已预约</view>
+              </view>
+              <view class='handle_right' bindtap="handShow">
+                <image src="../../../static/my/more.png"></image>
+              </view>
+            </view>
+            <view class='btngroup' wx:if="{{isShow}}">
+                  <view class='btn'  data-id='{{item.id}}' bindtap="deleteAct">删除</view>
+                </view>
+					</view>
+        </view>
+        
+        
+			</view>
+		</scroll-view>
+	</swiper-item>
+
+</swiper>
+

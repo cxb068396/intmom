@@ -1,0 +1,284 @@
+/* pages/my/coupon/coupon.wxss */
+/**indexwxss**/
+page {
+  background-color: #F6F6F6
+}
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 88rpx;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+}
+
+swiper {
+  position: absolute;
+  top: 88rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 50%;
+  color: #777777;
+}
+
+.on {
+  color: #171717;
+  position: relative;
+}
+
+.on::before {
+  position: absolute;
+  bottom: 0;
+  left: 130rpx;
+  content: '';
+  width: 100rpx;
+  height: 5rpx;
+  background-color: #D22A3A;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+swiper-item {
+  position: relative;
+  -webkit-overflow-scrolling: touch
+}
+
+swiper-item::before {
+  content: '';
+  width: 100%;
+
+}
+
+.input_coupon {
+  width: 100%;
+  background-color: #F6F6F6;
+  height: 70rpx;
+  display: none;
+}
+
+.coupon_code {
+  width: 710rpx;
+  height: 50rpx;
+  display: flex;
+  padding: 20rpx;
+}
+
+.coupon_code input {
+  width: 690rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: left;
+  padding-left: 20rpx;
+  background-color: #fff;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+.coupon_code .btn {
+  width: 100rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  color: #fff;
+  background-color: #BD4044;
+  font-size: 24rpx;
+}
+
+.noaddress {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 150rpx 0;
+  margin-top: 20rpx;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noaddress image {
+  width: 380rpx;
+  height: 340rpx;
+  margin-bottom: 20rpx;
+}
+
+.noaddress .tishi {
+  color: #999;
+  font: 28rpx;
+}
+
+.more_coupon {
+  width: 710rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 40rpx;
+  background-color: #BD4044;
+  position: fixed;
+  bottom: 20rpx;
+  left: 20rpx;
+}
+
+.attend {
+  width: 702rpx;
+  margin: 24rpx auto;
+  background-color: #fff;
+  border-radius: 16rpx;
+  display: flex;
+  padding: 28rpx 24rpx;
+  box-sizing: border-box;
+}
+
+.attend_left {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.attend_left image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: 28rpx;
+  border-radius:8rpx ;
+}
+
+.attend_left .tag {
+  width: 120rpx;
+  height: 40rpx;
+  background: linear-gradient(270deg, #FFE3D7 0%, #F5C0AD 100%);
+  border-radius: 4rpx 22rpx 4rpx 4rpx;
+  font-size: 22rpx;
+  color: #6E3B23;
+  text-align: center;
+  line-height: 40rpx;
+}
+.attend_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32rpx;
+}
+
+.attend_right .title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #171717;
+}
+
+.attend_right .desc {
+  font-size: 26rpx;
+  color: #555555;
+  width: 406rpx;
+  margin: 14rpx 0 40rpx 0;
+}
+
+.notice {
+  display: flex;
+  position: relative;
+  height: 30rpx;
+}
+
+.notice .ad {
+  width: 44rpx;
+  height: 22rpx;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.notice image {
+  width: 44rpx;
+  height: 22rpx;
+  position: absolute;
+  top: 3rpx;
+  left: 0;
+}
+
+.notice .marquee {
+  width: 360rpx;
+  margin-left: 20rpx;
+  overflow: hidden;
+  color: #6E3B23;
+  background: linear-gradient(270deg, #FCFCFC 0%, #FFF9F7 100%);
+}
+
+.attend_right .date {
+  font-size: 22rpx;
+  font-weight: 600;
+  color: #171717;
+  margin: 24rpx 0;
+}
+
+.attend_right .date text {
+  color: #555555;
+  font-weight: 400;
+}
+
+.handle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.handle .handle_left {
+  display: flex;
+  align-items: center;
+}
+
+.handle_left image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+}
+
+.handle_left .num {
+  color: #555555;
+  font-size: 22rpx;
+}
+.handle_right{
+
+
+}
+.handle_right image{
+  width: 50rpx;
+  height: 15rpx;
+  margin-right:15rpx;
+}
+.btngroup{
+ display: flex;
+ justify-content: flex-end;
+}
+.btn{
+  width: 60rpx;
+  background-color:#FF752A ;
+  font-size: 24rpx;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  color: #fffffF;
+  position: relative;
+}
+.btn::after{
+  position: absolute;
+  left: 20rpx;
+  top: -10rpx;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FF752A;
+  z-index: 1000;
+}

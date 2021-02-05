@@ -1,0 +1,59 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "活动详情",
+          "pathName": "pages/home/activeInfo/activeInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/test/test",
+          "pathName": "pages/home/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "讲师",
+          "pathName": "pages/home/senior/senior",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的活动",
+          "pathName": "pages/my/my/myActivity/myActivity",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my/coupon/coupon",
+          "pathName": "pages/my/my/coupon/coupon",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "专题",
+          "pathName": "pages/home/special/special",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

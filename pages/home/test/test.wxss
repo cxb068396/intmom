@@ -1,0 +1,118 @@
+page {
+background: #F3F3F3;
+}
+
+/* .none{
+  display: flex;
+  flex-direction: column;
+  margin: 150rpx auto;
+  justify-content:  center;
+  align-items: center;
+}
+.none image{
+  width: 288rpx;
+  height: 288rpx;
+  margin-bottom: 24rpx;
+}
+.none view{
+  font-size: 26rpx;
+color: #C1C1C1;
+} */
+
+.header {
+  width: 100%;
+  height: 176rpx;
+  background: linear-gradient(180deg, #F9EDE7 0%, #FFFFFF 100%);
+}
+
+.header .header_image {
+  white-space: nowrap;
+  padding: 24rpx 0 0 24rpx;
+}
+
+/*列表项*/
+.listContent {
+  width: 100%;
+}
+
+.item {
+  margin-right: 16rpx;
+  padding-bottom: 12rpx;
+  position: relative;
+}
+
+.model {
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  width: 206rpx;
+  height: 128rpx;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  text-align: center;
+  line-height: 128rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item image {
+  width: 206rpx;
+  height: 128rpx;
+  border-radius: 8rpx;
+}
+
+.active {
+  position: relative;
+}
+
+.active::before {
+  content: '';
+  width: 72rpx;
+  height: 4rpx;
+  background: #FF752A;
+  border-radius: 2rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #252525;
+  margin-top: 26rpx;
+  margin-left: 24rpx;
+}
+.title image{
+  width: 44rpx;
+  height: 44rpx;
+  margin-left: 12rpx;
+}
+.everyInfo{
+  width: 702rpx;
+background-color: #fff;
+border-radius: 0px 0px 16rpx 16rpx;
+margin: 30rpx auto;
+padding-bottom: 36rpx;
+}
+.everyInfo image{
+  width: 702rpx;
+height: 236rpx;
+}
+.everyInfo .title{
+font-size: 28rpx;
+font-weight: 600;
+color: #171717;
+margin: 26rpx 0 16rpx 64rpx;
+}
+.everyInfo .desc{
+  font-size: 22rpx;
+  width: 622rpx;
+  color: #484848;
+  margin-left: 64rpx
+  }

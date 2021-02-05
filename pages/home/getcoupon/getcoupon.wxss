@@ -1,0 +1,100 @@
+page{
+background: #F5F5F5;
+}
+.code{
+  width: 702rpx;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin: 24rpx auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32rpx  94rpx 64rpx 92rpx;
+}
+.code .title{
+font-size: 34rpx;
+font-weight: 600;
+color: #4C4C4C;
+margin-bottom: 24rpx;
+}
+.code .desc{
+font-size: 26rpx;
+color: #636363;
+line-height: 38rpx;
+margin-bottom: 24rpx;
+}
+.code image{
+  width: 248rpx;
+  height:248rpx;
+}
+.discount{
+  margin: 0 auto;
+  width: 702rpx;
+  height: 236rpx;
+  position: relative;
+  margin-bottom: 24rpx;
+}
+.discount image{
+  width: 100%;
+  height: 100%;
+
+}
+.discount .discount_left{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30rpx;
+  left: 52rpx;
+  z-index: 99;
+}
+.discount .discount_left .price{
+font-size: 30rpx;
+font-weight: 500;
+color: #B52734;
+margin-bottom: 24rpx;
+}
+.discount_left .price text{
+font-size: 64rpx;
+}
+.discount_left  .date{
+font-size: 20rpx;
+color: #494949;
+margin-bottom: 8rpx;
+}
+.discount_middle{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  position: absolute;
+  top: 36rpx;
+  left: 245rpx;
+  z-index: 99;
+}
+.discount_middle  .new{
+font-size: 32rpx;
+font-weight: bold;
+color: #494949;
+margin-bottom: 8rpx;
+width: 240rpx;
+}
+.discount_middle  .threshold{
+  font-size: 24rpx;
+  color: #494949;
+  }
+.discount_right{
+  width: 146rpx;
+  height: 48rpx;
+  background: #B52734;
+  border-radius: 8rpx;
+  text-align: center;
+  line-height: 48rpx;
+  color: #fff;
+  font-size: 24rpx;
+  position: absolute;
+  right: 24rpx;
+  bottom:24rpx;
+  z-index:99;
+}

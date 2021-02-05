@@ -1,0 +1,60 @@
+<!--pages/my/coupon/coupon.wxml-->
+<!--index.wxml-->
+<view class="swiper-tab">
+	<view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="2" bindtap="swichNav">未使用 <text wx:if='{{arrList.length>0}}'>({{arrList.length}})</text></view>
+	<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="3" bindtap="swichNav">已使用 <text wx:if='{{arrList1.length>0}}'>({{arrList1.length}})</text></view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight?winHeight+'px':'auto'}}" bindchange="bindChange">
+	<!-- 我是哈哈 -->
+	<swiper-item>
+		<scroll-view scroll-y="{{true}}" style="height: {{winHeight?winHeight+'px':'auto'}}">
+
+			<!---未使用优惠券-->
+			<view>
+				<view class='not_used_coupon'  >
+					<view class="used_coupon_box" wx:for='{{arrList}}' wx:key='index'>
+						<image src='../../../static/my/noUse.png'></image>
+						<view class="coupon_box_containerOne">
+							<view class="box_container_title">{{item.coupon_name}}</view>
+							<view class="containerone_xianzhi">{{item.coupon_type==1?'沙龙活动':'英语课堂'}}</view>
+							<view class="box_container_startTime">使用时间</view>
+							<view class="box_container_endTime">{{item.time}}</view>
+						</view>
+						<view class="coupon_box_containerTwo">
+							<view class='price'>￥<text>{{item.cash}}</text></view>
+							<view class="coupon_box_change" bindtap="redemption" data-id='{{item.activity_id}}'>兑现</view>
+						</view>
+	
+					</view>
+				</view>
+			</view>
+			
+		</scroll-view>
+	</swiper-item>
+	<!-- 我是呵呵 -->
+	<swiper-item>
+		<scroll-view scroll-y="{{true}}" style="height: {{winHeight?winHeight+'px':'auto'}}">
+			<!--已经使用的优惠券--->
+			<view>
+				<view class='not_used_coupon'>
+					<view class="used_coupon_box" wx:for='{{arrList1}}' wx:key='index'>
+						<image wx:if='{{item.status==3}}' src="../../../static/my/isUse.png"></image>
+						<image  wx:if='{{item.status==4}}' src="../../../static/my/isDate.png"></image>
+						<view class="coupon_box_containerOne">
+							<view class="box_container_title isUse_isDate">{{item.coupon_name}}</view>
+							<view class="containerone_Used ">{{item.coupon_type==1?'沙龙活动':'英语课堂'}}</view>
+							<view class="box_container_startTime isUse_isDate">使用时间</view>
+							<view class="box_container_endTime isUse_isDate">{{item.use_time}}</view>
+						</view>
+						<view class="coupon_box_containerTwo">
+							<view class='isUsedPrice'>￥<text>{{item.cash}}</text></view>
+							<!-- <view class="coupon_box_change" bindtap="redemption" data-id='{{item.activity_id}}'>兑现</view> -->
+						</view>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</swiper-item>
+
+</swiper>

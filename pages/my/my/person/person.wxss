@@ -1,0 +1,58 @@
+page {
+  background: #F6F6F6;
+}
+
+.person {
+  width: 702rpx;
+ 
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin: 24rpx auto;
+  box-sizing: border-box;
+  padding:0 40rpx 40rpx 40rpx;
+}
+
+.info {
+  padding: 34rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #F6F6F6;
+}
+
+.info_left {
+  font-size: 30rpx;
+  color: #171717;
+}
+
+.info_right>image {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+}
+
+.info_right .title {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #7F7F7F;
+}
+
+.info_right .title .img {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 16rpx;
+}
+
+.loginOut {
+  width: 590rpx;
+  height: 80rpx;
+  background: #F5F6F7;
+  border-radius: 8rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #262626;
+  font-weight: 500;
+  font-size: 30rpx;
+  margin: 60rpx auto;
+}

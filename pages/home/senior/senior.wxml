@@ -1,0 +1,52 @@
+<!--pages/home/senior/senior.wxml-->
+<view class="wrap">
+  <image src="../../static/image/senior_bg.png" class="images"></image>
+  <text class="index_text">本期活动</text>
+  <block wx:for="{{activeData}}" wx:key='index'>
+  <view class="index_top">
+    <image src="{{item.img}}" class="index_top_img"></image>
+    <view class="index_top_box">
+      <view class="top_box_text1">{{item.activity_name}}</view>
+      <view class="top_box_text2">{{item.activity_profile}}</view>
+      <view class="top_box_btn"  data-id='{{item.id}}' bindtap="goActive">查看活动</view>
+    </view>
+  </view>
+</block>
+  <view class="line"></view>
+  <view class='senior_info'>
+  <view class="index_box">
+    <view class="index_box_left">
+      <image src="../../static/image/person.jpg"></image>
+      <view class="box_left_senior">资深讲师</view>
+      <view class="box_left_name">林巍洋</view>
+    </view>
+    <view class="index_box_right">
+      <view class="box_right_one">个人简介:</view>
+      <view class="box_right_two">
+        <view>牛津大学工商管理硕士&香港中文大学全球沟通专业。</view>
+        <view>英国文化大使馆 100位校友牛津代表。</view>
+        <view>新浪华东区五星讲师。</view>
+        <view>GMAT750，雅思听力&阅读满分 9 分，口语 8.5，托福听力阅读满分，写作 29。</view>
+      </view>
+      <!-- <view class="box_right_three">展开全部<image src="../../static/image/turnDown.png"></image></view> -->
+    </view>
+  </view>
+  <view class="index_box">
+    <view class="index_box_left">
+      <image src="../../static/image/img.png"></image>
+      <view class="box_left_senior">资深讲师</view>
+      <view class="box_left_name">卢老师</view>
+    </view>
+    <view class="index_box_right">
+      <view class="box_right_one">个人简介:</view>
+      <view class="box_right_two">
+        <view>创始人兼执行主管CEO</view>
+        <view>首席咨询顾问 Chief Consultant</view>
+        <view>资深国际教育专家 SIEE</view>
+        <view>英美大学申请专业组织成员 NACAC/IECA</view>
+      </view>
+      <!-- <view class="box_right_three">展开全部<image src="../../static/image/turnDown.png"></image></view> -->
+    </view>
+  </view>
+</view>
+</view>

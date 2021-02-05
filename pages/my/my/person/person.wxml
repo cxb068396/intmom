@@ -1,0 +1,29 @@
+<view class='person'>
+  <view class='info'>
+    <view class='info_left'>头像</view>
+    <view class='info_right'>
+      <image src='{{avatar}}'></image>
+    </view>
+  </view>
+  <view class='info'>
+    <view class='info_left'>用户名</view>
+    <view class='info_right'>
+      <view class='title'>
+        <view>{{usrename}}</view>
+        <!-- <image class='img' src='../../../static/my/arrow_right.png'></image> -->
+      </view>
+    </view>
+  </view>
+  <view class='info'>
+    <view class='info_left'>性别</view>
+    <view class='info_right'>
+      <view class='title'>
+        <view>{{sex}}</view>
+        <!-- <image class='img' src='../../../static/my/arrow_right.png'></image> -->
+      </view>
+    </view>
+  </view>
+  <view class='loginOut' bindtap="loginOut">
+    退出登录
+  </view>
+</view>

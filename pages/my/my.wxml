@@ -1,0 +1,93 @@
+<view class='my_container'>
+<!--头部登录start-->
+<view wx:if="{{isShow}}" class='header_login'>
+  <image class="login_img" src="{{userInfo.avatar}}"></image>
+  <view class='login_btn' >
+    <view>{{userInfo.username}}</view>
+  </view>
+</view>
+
+<view wx:else class='header_login'>
+  <image class="login_img" src="../static/my/is_not_login.png"></image>
+  <view class='login_btn' bindtap="goLogin">
+    <view>登录</view>
+    <image class="index_top_person" src="../static/my/edit.png"></image>
+  </view>
+</view>
+
+
+<!--头部登录end-->
+<!--余额优惠券start-->
+<view class='balance_discount_container'>
+  <view class='balance_discount'>
+    <view class='balance'>
+      <view class='balance_content'>
+        <view class='balance_content_left'>
+        <view class='left_top'>
+         <text>会员：</text>
+         <image src="../static/my/vip.png"></image>
+        </view>
+        <view class='left_bottom'>
+         <text>{{userInfo.mobile?userInfo.mobile:'绑定手机号'}}</text>
+        </view>
+        </view>
+      </view>
+    </view>
+    <view class='xian'></view>
+    <view class='balance'>
+      <view class='balance_content' bindtap="toCoupon">
+        <view class='balance_content_left'>
+          <view class='title'>优惠券：</view>
+          <view class='num'>
+            <text>{{couponNum?couponNum:0}}</text> 张
+          </view>
+        </view>
+        <view class='discount_content_right'>
+          <image src="../static/my/discount.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--余额优惠券end-->
+<!--导航跳转start-->
+<view class='navlink'>
+  <view class='link' bindtap="goPerson">
+    <view class="link_left">
+      <image src="../static/my/mine.png"></image>
+      <view class='icon_name'>个人信息</view>
+    </view>
+    <view class='arrow_right'>
+      <image src="../static/my/arrow_right.png"></image>
+    </view>
+  </view>
+  <view class='link' bindtap='goActivity'>
+    <view class="link_left">
+      <image src="../static/my/active.png"></image>
+      <view class='icon_name'>我的活动</view>
+    </view>
+    <view class='arrow_right'>
+      <image src="../static/my/arrow_right.png"></image>
+    </view>
+  </view>
+  <!-- <view class='link' bindtap="goAbout">
+    <view class="link_left">
+      <image src="../static/my/about.png"></image>
+      <view class='icon_name'>关于</view>
+    </view>
+    <view class='arrow_right'>
+      <image src="../static/my/arrow_right.png"></image>
+    </view>
+  </view> -->
+  <view class='link'  bindtap="goOpinion">
+    <view class="link_left">
+      <image src="../static/my/opinion.png"></image>
+      <view class='icon_name'>意见反馈</view>
+    </view>
+    <view class='arrow_right'>
+      <image src="../static/my/arrow_right.png"></image>
+    </view>
+  </view>
+</view>
+<!--导航跳转end-->
+</view>

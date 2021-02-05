@@ -1,0 +1,134 @@
+page {
+  background-color: #f6f6f6;
+}
+
+.active_header {
+  width: 702rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+  margin: 24rpx auto;
+  display: flex;
+
+}
+
+.active_header image {
+  width: 280rpx;
+  height: 272rpx;
+  border-radius: 16rpx;
+}
+
+.active_header_right {
+  margin-left: 40rpx;
+}
+
+.active_header_right .active_title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #171717;
+  margin-bottom: 8rpx;
+}
+
+.active_header_right .active_desc {
+  font-size: 26rpx;
+  color: #787878;
+  margin-bottom: 32rpx;
+}
+
+.active_header_right .active_date {
+  font-size: 26rpx;
+  color: #171717;
+  margin-bottom: 8rpx;
+}
+
+.active_header_right .active_date text {
+  font-size: 24rpx;
+  color: #787878;
+}
+
+.active_bottom {
+  width: 702rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 32rpx 24rpx;
+  box-sizing: border-box;
+  margin: 24rpx auto;
+  padding-bottom: 88rpx;
+}
+
+.active_bottom .bottom_title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #171717;
+  margin-bottom: 32rpx;
+}
+
+.active_bottom .bottom_active {
+  display: flex;
+  margin-bottom: 32rpx;
+}
+.bottom_active image{
+  width: 292rpx;
+  height: 160rpx;
+  border-radius: 16rpx;
+  margin-right: 48rpx;
+} 
+.bottom_active .active_bottom_right .active_title{
+  font-size: 28rpx;
+  color:#171717;
+  font-weight: 600;
+  margin-bottom: 12rpx;
+}
+.bottom_active .active_bottom_right .active_desc{
+  font-size: 24rpx;
+  color:#787878;
+  width: 298rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.sumbitBtn{
+ width: 100%;
+height: 88prx;
+background: #FF752A;
+color: #fff;
+font-size: 32rpx;
+font-weight: 600;
+text-align: center;
+line-height: 88rpx;
+position: fixed;
+left: 0;
+bottom: 0;
+z-index: 99;
+}
+.booked{
+  background-color: #bbbbbb;
+}
+
+/*富文本*/
+.shop_jies{
+  width: 100%;
+  background: #ffffff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+  /* height: 190rpx; */
+  margin-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-bottom: 100rpx;
+}
+
+/* 解决图片之间间隙 */
+.wxParse-img{
+  display: inline-flex;
+  border: none;
+  outline: none;
+  vertical-align: bottom;
+}
+image[src=""] {
+  opacity: 0;
+}

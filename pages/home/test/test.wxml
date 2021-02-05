@@ -1,0 +1,36 @@
+<!-- <view class='none'>
+  <image src='../../static/my/vvip.png'></image>
+  <view>更多精彩内容正在准备中，敬请期待</view>
+</view> -->
+
+
+<!--头部左右滑动start-->
+<view class='header'>
+<view class='header_image'>
+        <scroll-view scroll-x>
+            <view class="listContent">
+                <view style="display: inline-block;" wx:for="{{userList}}" wx:key='index'>
+                   <view class="item {{showId == item.id?'active':''}}" data-id='{{item.id}}'  data-index='{{index}}' bindtap="getInfo">
+                    <image class="userAvatar" src="{{item.avatar}}"></image>
+                    <view wx:if='{{showId != item.id}}' class='{{showId != item.id?"model":""}}'>{{item.title}}</view>
+                   </view>
+                </view>
+            </view> 
+        </scroll-view>
+    </view>
+  </view>
+    <!--头部左右滑动end-->
+
+   <view class='title'>
+    关于衡学
+     <image src='../../static/special/hot.png'></image>
+   </view>
+    <!-- 信息展示start -->
+<block wx:for='{{everyInfo.info}}' wx:key='index'>
+  <view class='everyInfo'  data-url='{{item.url}}' bindtap="goTweet">
+    <image src='{{item.image}}'></image>
+    <view class='title'>{{item.title}}</view>
+    <view class='desc'>{{item.desc}}</view>
+  </view>
+</block>
+    <!-- 信息展示end -->

@@ -1,0 +1,15 @@
+
+   <view class='title'>
+    关于体育
+  
+   </view>
+    <!-- 信息展示start -->
+<block wx:for='{{infos}}' wx:key='index'>
+  <view class='everyInfo'  data-url='{{item.links}}' bindtap="goTweet">
+    <image src='{{item.image}}'></image>
+    <view class='title'>{{item.title}}</view>
+    <view class='desc'>{{item.content}}</view>
+  </view>
+</block>
+    <!-- 信息展示end -->
+

@@ -1,0 +1,41 @@
+<!--pages/home/subscribe/subscribe.wxml-->
+<view class="wrap">
+  <view class="index_top">
+    <view class="index_top_one">
+      <view class="top_oneText sameText">预约日期</view>
+      <view class="top_oneCon sameCon">
+        <input class="oneCon_Inp sameInp" placeholder="请选择预约日期" disabled value='{{activity_start}}'></input>
+      </view>
+    </view>
+    <view class="index_top_two"  >
+      <view class="top_twoText sameText">到场时间</view>
+      <view class="top_twoCon sameCon">
+        <input class="twoCon_Inp sameInp" placeholder="可预约10:00~17:00" value='{{arrival_time}}' disabled></input>
+      </view>
+    </view>
+    <view class="index_top_three">
+      <image src="../../static/image/aiya.png"></image>
+      <text>预约后，请提前到场，超时将自动作废</text>
+    </view>
+  </view>
+  <view class="index_two">
+    <view class="index_twoText">优惠券</view>
+    <view class="index_twoCon">{{coupon.coupon_name}}</view>
+  </view>
+  <view wx:if='{{isShow}}' class="index_footer" bindtap="sumbitBook">提交预约</view>
+</view>
+
+<!--日期弹出框-->
+<view class="modal {{timeShow?'modal_show':'modal_hide'}}">
+  <!-- 点击弹出框外部关闭弹出框 -->
+  <view class='modal_cancel' bindtap='modelCancel'></view>
+  <!-- 弹出框主体 -->
+  <view class='modal_container'>
+    <!-- 时间段 -->
+    <view class='hour'>
+      <view bindtap="hourClick"
+        class="hour_item {{item.isShow?'':'hour_unactive'}} {{hourIndex==index?'hour_active':''}} "
+        wx:for="{{hourList}}" wx:key="index" data-index="{{index}}" data-isshow="{{item.isShow}}">{{item.hour}}</view>
+    </view>
+  </view>
+</view>

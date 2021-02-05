@@ -1,0 +1,100 @@
+<!--pages/home/home.wxml-->
+<view class="wrap">
+  <view class="index_top">
+    <image class="index_top_bg" src="../static/image/bg_top.png"></image>
+    <view class="index_top_text">国际妈妈课堂专注于妈妈们的课堂</view>
+    <!-- <view class="index_top_box">
+      <input class="top_box_inp" placeholder="请输入关键词" placeholder-style="color: #fff;" disabled></input>
+      <view class="top_box_box">
+        <image src="../static/image/search.png"></image>
+      </view>
+    </view> -->
+    <image class="index_top_person" src="https://www.intmom.club/Uploads/zt/person.png"></image>
+  </view>
+  <!-- 轮播图 -->
+  <view class="index_swiper" wx:if='{{bannars.length>0}}'>  
+    <view class="swiper_container">
+      <view class="container">
+        <swiper class="home-swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1200">
+          <block wx:for='{{bannars}}' wx:key='index'>
+            <swiper-item>
+              <image src="{{item.image}}" class="slide-image"  data-id='{{item.activity_id}}' bindtap="goActiveInfo"/>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+  <!-- 专题，体育 -->
+  <view class="index_center">
+    <view class="center_container" wx:for='{{centerContainer}}' wx:key='index'>
+      <image class="center_container_img" src="{{item.image}}" bindtap="gowelfare" data-name='{{item.text}}'></image>
+      <view class="center_container_text">{{item.text}}</view>
+    </view>
+  </view>
+  <!-- 活动预约 更多> -->
+  <block wx:if="{{activeData.length>0}}">
+  <view class="index_activity">
+    <text class="activity_text">活动预约</text>
+    <!-- <view class="activity_right">更多<image src="../static/image/turnRight.png"></image> -->
+    <!-- </view> -->
+  </view>
+
+  <view class="index_activity_container" wx:for='{{activeData}}' wx:key='index'>
+    <view class="activity_container">
+      <image src="{{item.img}}" data-id='{{item.id}}' bindtap="goActive" mode='aspectFill'></image>
+      <view class="activity_container_container">
+        <view class="container_textOne">{{item.activity_name}}</view>
+        <view class="container_textTwo">{{item.activity_profile}}</view>
+        <view class="container_bottom">
+          <view class="container_bottom_left">
+            <image src="../static/image/wait.png"></image>
+            <text>{{item.num}}人已预约</text>
+          </view>
+          <view wx:if='{{item.status==0}}' class="container_bottom_right" data-id='{{item.id}}' bindtap="toSubscribe">预约</view>
+          <view  wx:if='{{item.status==1}}' class="container_bottom_right order" >已预约</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+  <!-- 优质推文 -->
+  <view class="index_activity">
+    <text class="activity_text">优质推文</text>
+    <!-- <view class="activity_right">更多<image src="../static/image/turnRight.png"></image> -->
+    <!-- </view> -->
+  </view>
+  <view class="index_activity_container" wx:for='{{twitterData}}' wx:key='index'>
+    <view class="activity_container" data-url='{{item.links}}' bindtap="goTweet">
+      <image src="{{item.image}}" ></image>
+      <view class="activity_container_container">
+        <view class="container_textOne">{{item.title}}</view>
+        <view class="container_textTwo">{{item.content}}</view>
+        <view class="container_bottom">
+          <view class="container_bottom_left">
+            <image style="width: 30rpx;height:24rpx" src="../static/image/eye.png"></image>
+            <text>124人已阅读</text>
+          </view>
+          <view class="container_bottom_right">查看</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="index_footer">已经到底啦,没有更多内容啦~</view> -->
+    <view style="height:50rpx"></view>
+
+  <!-- 遮罩层 -->
+  <view class="iswrap" wx:if='{{isShow}}'>
+    <!--遮罩层  -->
+    <view class="shade">
+      <view class="contes">
+        <image src="../static/image/shape.png" class="shadeImage"></image>
+        <view class='title'>{{coupon.coupon_name}}</view>
+        <view class='price'>￥ <text>{{coupon_price}}</text></view>
+        <view class='date'>有效时间：{{coupon.time}}</view>
+        <view class='getCoupon' bindtap="receive"></view>
+        <image class="close" src="../static/image/close.png"  bindtap="close"></image>
+      </view>
+    </view>
+  </view>
+</view>

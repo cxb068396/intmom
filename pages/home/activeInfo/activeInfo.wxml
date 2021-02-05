@@ -1,0 +1,35 @@
+<!--活动Start-->
+<view class='active_header'>
+  <image src="{{pic_cover}}" mode='aspectFill'></image>
+  <view class='active_header_right'>
+    <view class='active_title'>{{active.activity_name}}</view>
+    <view class='active_desc'>{{active.activity_profile}}</view>
+    <view class='active_date'>活动时间：<text>{{active.activity_start}}</text></view>
+    <view class='active_date'>地点：<text>{{active.activity_address}}</text></view>
+  </view>
+</view>
+<!--活动end-->
+
+<view class="shop_jies">
+  <import src="../../../lib/wxParse/wxParse.wxml" />
+  <template is="wxParse" data="{{wxParseData: desc.nodes}}" />
+</view>
+
+
+<!--下期活动Start-->
+<view class='active_bottom' wx:if='{{list.length>0}}'>
+  <view class='bottom_title'>下期活动</view>
+  <block  wx:for="{{list}}" wx:key='index'>
+    <view class='bottom_active' data-id="{{item.id}}" bindtap="goActive">
+      <image src="{{item.image}}"></image>
+      <view class='active_bottom_right'>
+        <view class='active_title'>{{item.activity_name}}</view>
+        <view class='active_desc'>{{item.activity_profile}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+<!--下期活动end-->
+
+<view wx:if='{{active.status==0}}' class='sumbitBtn' bindtap="goSubscribe" data-id='{{active.id}}'>预约</view>
+<view wx:if='{{active.status==1}}' class='sumbitBtn booked'>已预约</view>

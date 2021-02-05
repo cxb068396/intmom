@@ -1,0 +1,8 @@
+page{
+  background-color: #fff;
+}
+text{
+font-size: 30rpx;
+color: #B2B2B2;
+margin: 30rpx 0 0 24rpx;
+}

@@ -1,0 +1,218 @@
+/* pages/home/subscribe/subscribe.wxss */
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+.index_top{
+  width: 94%;
+  height: 320rpx;
+  background-color: #fff;
+  margin:auto;
+  border-radius: 16rpx;
+  position: relative;
+  top: 24rpx;
+}
+.sameText{
+  width: 25%;
+  font-size: 30rpx; 
+  font-weight: bold;
+  color: #525151;
+}
+.sameCon{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.sameInp{
+  width: 100%s;
+  height: 38rpx;
+  font-size: 26rpx;
+  font-weight: 400;
+  line-height: 38rpx;
+}
+.index_top_one{
+  width: 93%;
+  height: 118rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.top_oneText{
+  height: inherit;
+  line-height: 118rpx;
+}
+.top_oneCon{
+  height: inherit;
+}
+.oneCon_Inp{
+  margin-top: 38rpx;
+}
+.index_top_two{
+  width: 93%;
+  height: 108rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.top_twoText{
+  height: 108rpx;
+  line-height: 108rpx;
+}
+.top_twoCon{
+  height: inherit;
+}
+.twoCon_Inp{
+  margin-top: 34rpx;
+}
+.top_twoCon>image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-top: 37rpx;
+}
+.index_top_three{
+  width: 93%;
+  height: 90rpx;
+  margin: auto;
+}
+.index_top_three>image{
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 28rpx;
+}
+.index_top_three>text{
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Regular, SourceHanSansSC;
+  font-weight: 400;
+  color: #A1A1A1;
+  line-height: 90rpx;
+  margin-left: 10rpx;
+  position: relative;
+  top: -3rpx;
+}
+.index_two{
+  width: 94%;
+  height: 104rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  margin:45rpx auto;
+  margin-bottom: unset;
+  display: flex;
+  justify-content:space-between;
+}
+.index_twoText{
+  width: 29%;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #171717;
+  line-height: 104rpx;
+  margin-left: 30rpx;
+}
+.index_twoCon{
+  width: 70%;
+  height: 38rpx;
+  font-size: 26rpx;
+  font-weight: 400;
+  line-height: 104rpx;
+  color: #A1A1A1;
+}
+.index_footer{
+  width: 336rpx;
+  height: 72rpx;
+  background: #FF7C2F;
+  border-radius: 8px;  
+  margin: 56rpx auto;
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #fff;
+}
+
+
+
+/* 弹出框主体 */
+.modal_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+/* modal_header */
+.modal_header {
+  /* padding: 20rpx; */
+  text-align: center;
+  font-size: 11pt;
+}
+/* header_tip */
+.header_tip {
+  position: relative;
+  font-size: 9pt;
+  color: #FF7C2F;
+}
+
+/* 日期弹出框 */
+.modal {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* 是否显示 */
+.modal_show {
+  display: block;
+}
+.modal_hide {
+  display: none;
+}
+/* 背景模板*/
+.modal_cancel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* time_active选择状态 */
+.time_active {
+  color: #FF7C2F;
+  border-bottom: 4rpx solid #FF7C2F;
+}
+
+/* 时间 */
+.hour {
+  padding: 20rpx 0 0 20rpx;
+}
+
+.hour_item {
+  width: 22%;
+  box-sizing: border-box;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  float: left;
+  border: 2rpx solid #eee;
+  font-size: 11pt;
+  margin-right: 3%;
+  margin-bottom: 20rpx;
+}
+
+/* hour_active*/
+
+.hour_active {
+  background: #FF7C2F;
+  color: #fff;
+  border: 2rpx solid #FF7C2F;
+}
+/* hour_unactive */
+.hour_unactive {
+  color: #999;
+}
+

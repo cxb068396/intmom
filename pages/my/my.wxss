@@ -1,0 +1,179 @@
+/* pages/my/my.wxss */
+page {
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+.header_login {
+  width: 100%;
+  height: 310rpx;
+  padding-left: 68rpx;
+  background: linear-gradient(180deg, #FF6A19 0%, #FFB38D 100%);
+  display: flex;
+  align-items: center;
+}
+
+.login_img {
+  width: 128rpx;
+  height: 128rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.login_btn {
+  display: flex;
+  align-items: center;
+  margin-left: 48rpx;
+}
+
+.login_btn view {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-right: 16rpx;
+
+}
+
+.login_btn image {
+  width: 28rpx;
+  height: 25rpx;
+}
+
+.balance_discount_container {
+  position: relative;
+  height: 136rpx;
+}
+
+.balance_discount_container .balance_discount {
+  width: 702rpx;
+  height: 200rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  position: absolute;
+  left: 24rpx;
+  top: -64rpx;
+  padding: 40rpx 56rpx;
+  box-sizing: border-box;
+}
+
+.balance_discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance_discount .balance {
+  display: flex;
+  align-items: center;
+}
+
+.balance .balance_content {
+  display: flex;
+  align-items: center;
+}
+
+.balance_content .balance_content_left {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.balance_content_left .left_top {
+  display: flex;
+  align-items: center;
+  font: 28rpx;
+  font-weight: 600;
+  color: #484848;
+}
+.balance_content_left .left_bottom{ 
+font-size: 28rpx;
+color: #484848;
+margin-top:12rpx ;
+}
+.balance_content_left .left_top image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 2rpx;
+}
+
+.balance_content_left .title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #484848;
+  margin-bottom: 18rpx;
+}
+
+.balance_content_left .num {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #9A9A9A;
+}
+
+.balance_content_left .num text {
+  font-size: 40rpx;
+  color: #484848;
+  margin-right: 12rpx;
+}
+
+.balance_content_right>image {
+  width: 142rpx;
+  height: 108rpx;
+  margin-left: 22rpx;
+}
+
+.discount_content_right>image {
+  width: 144rpx;
+  height: 144rpx;
+
+}
+
+.balance_discount .xian {
+  width: 2rpx;
+  height: 88rpx;
+  background: #EEEEEE;
+  margin: 0 26rpx;
+}
+
+.navlink {
+  width: 702rpx;
+  height: 516rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  box-sizing: border-box;
+  padding:0 40rpx;
+  margin: 16rpx auto;
+}
+
+.navlink .link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32rpx 0;
+  border-bottom: 2rpx solid #F6F6F6;
+}
+
+.link .link_left {
+  display: flex;
+  align-items: center;
+}
+
+.link .link_left image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 24rpx;
+  margin-bottom: 2rpx;
+}
+
+.link .link_left .icon_name {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #4b4b4b;
+}
+
+.arrow_right image {
+  width: 32rpx;
+  height: 32rpx;
+}

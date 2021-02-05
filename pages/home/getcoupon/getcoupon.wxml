@@ -1,0 +1,32 @@
+<view>
+  <!--头部的二维码start-->
+  <view class='code'>
+    <view class='title'>领券中心</view>
+    <view class='desc'>新用户注册后，可享受￥399线下体验课程，更多体验课程，请添加官方客服微信“衡学君”，请扫描下方二维码添加。</view>
+    <!-- <view wx:for="{{imgalist}}">
+      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+    </view> -->
+    <image src="../../static/image/code.jpg" alt=""></image>
+  </view>
+  <!--头部的二维码end-->
+
+
+
+  <!--优惠券start-->
+
+  <view class='discount' wx:for='{{coupons}}' wx:key='index'>
+    <image src='../../static/my/noUse.png'></image>
+    <view class='discount_left'>
+      <view class='price'>￥<text>{{item.cash}}</text></view>
+      <view class='date'>使用时间</view>
+      <view class='date'>{{item.time}}</view>
+    </view>
+    <view class='discount_middle'>
+      <view class='new'>{{item.coupon_name}}</view>
+      <view class='threshold'>{{item.coupon_type==1?'沙龙活动':'英语课堂'}}</view>
+    </view>
+    <view class='discount_right' bindtap="recive" data-id='{{item.coupon_code}}'>领取</view>
+  </view>
+
+  <!--优惠券end-->
+</view>

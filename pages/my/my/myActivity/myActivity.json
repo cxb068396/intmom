@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "marquee": "../../../components/marquee/marquee"
+  },
+  "navigationBarTitleText": "我的活动",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff"
+ 
+}
